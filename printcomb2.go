@@ -4,7 +4,7 @@ import "github.com/01-edu/z01"
 
 func PrintComb2() {
 	for r := 0; r <= 98; r++ {
-		for j := 0; j <= 99; j++ {
+		for j := 1; j <= 99; j++ {
 
 			z01.PrintRune(rune('0' + r/10))
 			z01.PrintRune(rune(r%10 + '0'))
