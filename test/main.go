@@ -3,5 +3,7 @@ package main
 import "piscine"
 
 func main() {
-	piscine.PrintComb2()
+	piscine.PrintNbr(123)
+	piscine.PrintNbr(0)
+	piscine.PrintNbr(-84983649823675)
 }
