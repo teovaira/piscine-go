@@ -1,9 +1,13 @@
 package main
 
-import "piscine"
+import (
+	"fmt"
+
+	"piscine"
+)
 
 func main() {
-	piscine.PrintNbr(123)
-	piscine.PrintNbr(0)
-	piscine.PrintNbr(-84983649823675)
+	n := 0
+	piscine.PointOne(&n)
+	fmt.Println(n)
 }
