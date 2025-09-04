@@ -1,13 +1,7 @@
 package main
 
-// import (
-// 	"fmt"
+import "platform.zone01.gr/git/tvairakt/printa"
 
-// 	"piscine"
-// )
-
-// func main() {
-// 	fmt.Println(piscine.BasicAtoi("12345"))
-// 	fmt.Println(piscine.BasicAtoi("0000000012345"))
-// 	fmt.Println(piscine.BasicAtoi("000000"))
-// }
+func main() {
+	printa.PrintChar('a')
+}
