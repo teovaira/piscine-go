@@ -1,14 +1,18 @@
 package main
 
-// import (
-// 	"fmt"
+import (
+	"fmt"
 
-// 	"piscine"
-// )
+	"piscine"
+)
 
-// func main() {
-// 	fmt.Println(piscine.BasicAtoi2("12345"))
-// 	fmt.Println(piscine.BasicAtoi2("0000000012345"))
-// 	fmt.Println(piscine.BasicAtoi2("012 345"))
-// 	fmt.Println(piscine.BasicAtoi2("Hello World!"))
-// }
+func main() {
+	fmt.Println(piscine.Atoi("12345"))
+	fmt.Println(piscine.Atoi("0000000012345"))
+	fmt.Println(piscine.Atoi("012 345"))
+	fmt.Println(piscine.Atoi("Hello World!"))
+	fmt.Println(piscine.Atoi("+1234"))
+	fmt.Println(piscine.Atoi("-1234"))
+	fmt.Println(piscine.Atoi("++1234"))
+	fmt.Println(piscine.Atoi("--1234"))
+}
