@@ -1,9 +1,12 @@
 package main
 
-import (
-	"piscine"
-)
+// import (
+// 	"fmt"
 
-func main() {
-	piscine.PrintStr("Hello World!")
-}
+// 	"piscine"
+// )
+
+// func main() {
+// 	l := piscine.StrLen("Hello World!")
+// 	fmt.Println(l)
+// }
