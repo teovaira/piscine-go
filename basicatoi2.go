@@ -5,7 +5,7 @@ func BasicAtoi2(s string) int {
 
 	for _, r := range s {
 		d := int(r - '0')
-		if d < '0' || d > '9' {
+		if r < '0' || r > '9' {
 			return 0
 		}
 		n = n*10 + d
