@@ -1,16 +1,9 @@
 package main
 
-// import (
-// 	"fmt"
+import (
+	"piscine"
+)
 
-// 	"piscine"
-// )
-
-// func main() {
-// 	a := 13
-// 	b := 2
-
-// 	piscine.UltimateDivMod(&a, &b)
-// 	fmt.Println(a)
-// 	fmt.Println(b)
-// }
+func main() {
+	piscine.PrintStr("Hello World!")
+}
