@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"piscine"
-)
+// 	"piscine"
+// )
 
-func main() {
-	arg1 := 4
-	fmt.Println(piscine.Fibonacci(arg1))
-}
+// func main() {
+// 	arg1 := 4
+// 	fmt.Println(piscine.Fibonacci(arg1))
+// }
