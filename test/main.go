@@ -1,11 +1,12 @@
 package main
 
-// import (
-// 	"fmt"
+import (
+	"fmt"
 
-// 	"piscine"
-// )
+	"piscine"
+)
 
-// func main() {
-// 	fmt.Println(piscine.RecursivePower(4, 3))
-// }
+func main() {
+	arg1 := 4
+	fmt.Println(piscine.Fibonacci(arg1))
+}
