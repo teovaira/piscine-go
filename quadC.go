@@ -2,17 +2,16 @@ package piscine
 
 import "fmt"
 
-func QuadC(x,y int) {
-
+func QuadC(x, y int) {
 	if x <= 0 || y <= 0 {
 		return
 	}
 
 	for i := 1; i <= y; i++ {
 
-		for j:= 1; j <= x; j++ {
+		for j := 1; j <= x; j++ {
 
-			var ch rune
+			var s string
 
 			isTop := i == 1
 			isBottom := i == y
@@ -22,33 +21,29 @@ func QuadC(x,y int) {
 			switch {
 
 			case isTop && isLeft:
-				ch = 'A'
+				s = "A"
 			case isTop && isRight:
-				ch = 'A'
+				s = "A"
 			case isTop:
-				ch = 'B'
+				s = "B"
 
 			case isBottom && isLeft:
-				ch = 'C'
+				s = "C"
 			case isBottom && isRight:
-				ch = 'C'
+				s = "C"
 			case isBottom:
-				ch = 'B'
+				s = "B"
 
 			case isLeft || isRight:
-				ch = 'B'
+				s = "B"
 
 			default:
-				ch = ' '
-			} 
-			fmt.Print(string(ch))
+				s = ""
+			}
+			fmt.Print(s)
 		}
 
 		fmt.Println()
 
 	}
-
-	
-
-
 }
