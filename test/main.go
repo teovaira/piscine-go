@@ -8,5 +8,5 @@ package main
 
 // func main() {
 // 	arg := 4
-// 	fmt.Println(piscine.IterativeFactorial(arg))
+// 	fmt.Println(piscine.RecursiveFactorial(arg))
 // }
