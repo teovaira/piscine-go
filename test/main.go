@@ -1,11 +1,11 @@
 package main
 
-// import (
-// 	"fmt"
+import (
+	"fmt"
 
-// 	"piscine"
-// )
+	"piscine"
+)
 
-// func main() {
-// 	fmt.Println(piscine.IterativePower(4, 3))
-// }
+func main() {
+	fmt.Println(piscine.RecursivePower(4, 3))
+}
