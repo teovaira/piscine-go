@@ -7,6 +7,6 @@ package main
 // )
 
 // func main() {
-// 	arg1 := 4
-// 	fmt.Println(piscine.Fibonacci(arg1))
+// 	fmt.Println(piscine.Sqrt(4))
+// 	fmt.Println(piscine.Sqrt(3))
 // }
