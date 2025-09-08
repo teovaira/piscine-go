@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"piscine"
-)
+// 	"piscine"
+// )
 
-func main() {
-	arg := 4
-	fmt.Println(piscine.IterativeFactorial(arg))
-}
+// func main() {
+// 	arg := 4
+// 	fmt.Println(piscine.IterativeFactorial(arg))
+// }
