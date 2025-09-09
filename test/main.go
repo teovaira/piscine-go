@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"piscine"
-)
+// 	"piscine"
+// )
 
-func main() {
-	fmt.Println(piscine.IsNumeric("010203"))
-	fmt.Println(piscine.IsNumeric("01,02,03"))
-}
+// func main() {
+// 	fmt.Println(piscine.IsNumeric("010203"))
+// 	fmt.Println(piscine.IsNumeric("01,02,03"))
+// }
