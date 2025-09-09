@@ -1,11 +1,10 @@
 package main
 
-// import (
-// 	"fmt"
-// 	"piscine"
-// )
+import (
+	
+	"piscine"
+)
 
-// func main() {
-// 	fmt.Println(piscine.FindNextPrime(5))
-// 	fmt.Println(piscine.FindNextPrime(4))
-// }
+func main() {
+	(piscine.EightQueens())
+}
