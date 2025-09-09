@@ -1,10 +1,10 @@
 package main
 
-import (
-	
-	"piscine"
-)
+// import (
 
-func main() {
-	(piscine.EightQueens())
-}
+// 	"piscine"
+// )
+
+// func main() {
+// 	(piscine.EightQueens())
+// }
