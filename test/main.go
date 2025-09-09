@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"piscine"
-)
+// 	"piscine"
+// )
 
-func main() {
-	fmt.Println(piscine.IsLower("hello"))
-	fmt.Println(piscine.IsLower("hello!"))
-}
+// func main() {
+// 	fmt.Println(piscine.IsLower("hello"))
+// 	fmt.Println(piscine.IsLower("hello!"))
+// }
