@@ -1,13 +1,13 @@
 package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"piscine"
-)
+// 	"piscine"
+// )
 
-func main() {
-	fmt.Println(piscine.Compare("Hello!", "Hello!"))
-	fmt.Println(piscine.Compare("Salut!", "lut!"))
-	fmt.Println(piscine.Compare("Ola!", "Ol"))
-}
+// func main() {
+// 	fmt.Println(piscine.Compare("Hello!", "Hello!"))
+// 	fmt.Println(piscine.Compare("Salut!", "lut!"))
+// 	fmt.Println(piscine.Compare("Ola!", "Ol"))
+// }
