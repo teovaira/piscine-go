@@ -5,11 +5,14 @@ func Index(s string, toFind string) int {
 		runes := []rune(s)
 		toFindRunes := []rune(toFind)
 
-		if string(runes[index]) == toFind {
-			return index
-		} else if len([]rune(toFind)) > 0 && toFindRunes[0] == runes[index] {
+		if len(toFindRunes) == 0 {
+			return 0
+		}
+
+		if len(toFindRunes) > 0 && toFindRunes[0] == runes[index] {
 			return index
 		}
 	}
+
 	return -1
 }
