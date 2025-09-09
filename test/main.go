@@ -1,13 +1,13 @@
 package main
 
-// import (
-// 	"fmt"
+import (
+	"fmt"
 
-// 	"piscine"
-// )
+	"piscine"
+)
 
-// func main() {
-// 	fmt.Println(piscine.Index("Hello!", "l"))
-// 	fmt.Println(piscine.Index("Salut!", "alu"))
-// 	fmt.Println(piscine.Index("Ola!", "hOl"))
-// }
+func main() {
+	fmt.Println(piscine.Index("Hello!", "l"))
+	fmt.Println(piscine.Index("Salut!", "alu"))
+	fmt.Println(piscine.Index("Ola!", "hOl"))
+}
