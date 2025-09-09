@@ -7,5 +7,6 @@ package main
 // )
 
 // func main() {
-// 	fmt.Println(piscine.Concat("Hello!", " How are you?"))
+// 	fmt.Println(piscine.IsUpper("HELLO"))
+// 	fmt.Println(piscine.IsUpper("HELLO!"))
 // }
