@@ -7,22 +7,27 @@ func PrintNbrInOrder(n int) {
 		return
 	}
 
-	strnb := string(n)
-	strlen := len([]rune(strnb))
-
-	if strlen == 1 {
-		z01.PrintRune(rune(n + '0'))
+	if n == 0 {
+		z01.PrintRune('0')
+		return
 	}
 
-	table := make([]int, strlen)
+	var digits []int
+	for n > 0 {
+		digit := n % 10
+		digits = append(digits, digit)
+		n /= 10
+	}
 
-	for i := 0; i < strlen; i++ {
-		for j := 0; j < strlen-1; j++ {
-			if table[j] == table[strlen-1] {
-				break
-			} else if table[j] > table[j+1] {
-				table[j+1] = table[j]
+	for i := 0; i < len(digits)-1; i++ {
+		for j := i + 1; j < len(digits); j++ {
+			if digits[i] > digits[j] {
+				digits[i], digits[j] = digits[j], digits[i]
 			}
 		}
+	}
+
+	for _, d := range digits {
+		z01.PrintRune(rune('0' + d))
 	}
 }
