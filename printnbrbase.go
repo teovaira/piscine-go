@@ -2,6 +2,7 @@ package piscine
 
 import "github.com/01-edu/z01"
 
+// helper: validate base
 func isValidBase(base string) bool {
 	if len(base) < 2 {
 		return false
@@ -35,6 +36,7 @@ func PrintNbrBase(nbr int, base string) {
 		n = -n
 	}
 
+	// recursive printing
 	var printRec func(int64)
 	printRec = func(num int64) {
 		if num >= baseLen {
