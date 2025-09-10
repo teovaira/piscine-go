@@ -1,9 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"piscine"
-)
+// import (
+// 	"fmt"
+// 	"piscine"
+// )
 
 // func main() {
 // 	fmt.Println(piscine.TrimAtoi("12345"))
