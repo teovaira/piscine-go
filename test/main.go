@@ -6,5 +6,6 @@ package main
 // )
 
 // func main() {
-// 	fmt.Println(piscine.Capitalize("Hello! How are you? How+are+things+4you?"))
+// 	elems := []string{"Hello!", " How", " are", " you?"}
+// 	fmt.Println(piscine.BasicJoin(elems))
 // }
