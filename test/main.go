@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"piscine"
-)
+// 	"piscine"
+// )
 
-func main() {
-	s := "HelloHAhowHAareHAyou?"
-	fmt.Printf("%#v\n", piscine.Split(s, "HA"))
-}
+// func main() {
+// 	s := "HelloHAhowHAareHAyou?"
+// 	fmt.Printf("%#v\n", piscine.Split(s, "HA"))
+// }
