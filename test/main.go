@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"piscine"
-)
+// 	"piscine"
+// )
 
-func main() {
-	test := []string{"Hello", "how", "are", "you?"}
-	fmt.Println(piscine.ConcatParams(test))
-}
+// func main() {
+// 	test := []string{"Hello", "how", "are", "you?"}
+// 	fmt.Println(piscine.ConcatParams(test))
+// }
