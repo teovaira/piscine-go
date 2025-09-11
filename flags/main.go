@@ -63,8 +63,8 @@ func hasArg(slice []string, val string) bool {
 func printHelp() {
 	fmt.Println("--insert")
 	fmt.Println("  -i")
-	fmt.Println("         This flag inserts the string into the string passed as argument.")
+	fmt.Println("\t This flag inserts the string into the string passed as argument.")
 	fmt.Println("--order")
 	fmt.Println("  -o")
-	fmt.Println("         This flag will behave like a boolean, if it is called it will order the argument.")
+	fmt.Println("\t This flag will behave like a boolean, if it is called it will order the argument.")
 }
