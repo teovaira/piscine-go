@@ -16,10 +16,13 @@ func main() {
 		start = 1
 	}
 
+	printed := false
+
 	for i := start; i < len(args); i++ {
 		n, ok := atoiStrict(args[i])
 		if !ok || n < 1 || n > 26 {
 			z01.PrintRune(' ')
+			printed = true
 			continue
 		}
 
@@ -30,9 +33,12 @@ func main() {
 			r = rune('a' + (n - 1))
 		}
 		z01.PrintRune(r)
+		printed = true
 	}
 
-	z01.PrintRune('\n')
+	if printed {
+		z01.PrintRune('\n')
+	}
 }
 
 func atoiStrict(s string) (int, bool) {
@@ -44,8 +50,7 @@ func atoiStrict(s string) (int, bool) {
 		if r < '0' || r > '9' {
 			return 0, false
 		}
-		d := int(r - '0')
-		val = val*10 + d
+		val = val*10 + int(r-'0')
 	}
 	return val, true
 }
