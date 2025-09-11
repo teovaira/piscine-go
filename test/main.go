@@ -1,8 +1,12 @@
 package main
 
-// import "piscine"
+import (
+	"fmt"
 
-// func main() {
-// 	a := piscine.SplitWhiteSpaces("Hello how are you?")
-// 	piscine.PrintWordsTables(a)
-// }
+	"piscine"
+)
+
+func main() {
+	s := "HelloHAhowHAareHAyou?"
+	fmt.Printf("%#v\n", piscine.Split(s, "HA"))
+}
