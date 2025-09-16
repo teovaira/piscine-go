@@ -1,12 +1,8 @@
 package main
 
-// import (
-// 	"fmt"
+import "piscine"
 
-// 	"piscine"
-// )
-
-// func main() {
-// 	s := "HelloHAhowHAareHAyou?"
-// 	fmt.Printf("%#v\n", piscine.Split(s, "HA"))
-// }
+func main() {
+	a := []int{1, 2, 3, 4, 5, 6}
+	piscine.ForEach(piscine.PrintNbr, a)
+}
