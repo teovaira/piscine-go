@@ -13,46 +13,34 @@ func printString(s string) {
 	}
 }
 
+func exitError(err error) {
+	printString("ERROR: ")
+	printString(err.Error())
+	z01.PrintRune('\n')
+	os.Exit(1)
+}
+
 func main() {
 	if len(os.Args) == 1 {
-		_, err := io.Copy(os.Stdout, os.Stdin)
-		if err != nil {
-			printString("ERROR: ")
-			printString(err.Error())
-			z01.PrintRune('\n')
-			os.Exit(1)
+		if _, err := io.Copy(os.Stdout, os.Stdin); err != nil {
+			exitError(err)
 		}
 		return
 	}
 
-	anyError := false
-
 	for _, path := range os.Args[1:] {
-		file, err := os.Open(path)
+		f, err := os.Open(path)
 		if err != nil {
-			printString("ERROR: ")
-			printString(err.Error())
-			z01.PrintRune('\n')
-			anyError = true
-			continue
+			exitError(err)
 		}
 
-		if _, err := io.Copy(os.Stdout, file); err != nil {
-			printString("ERROR: ")
-			printString(err.Error())
-			z01.PrintRune('\n')
-			anyError = true
+		if _, err := io.Copy(os.Stdout, f); err != nil {
+			_ = f.Close()
+			exitError(err)
 		}
 
-		if err := file.Close(); err != nil {
-			printString("ERROR: ")
-			printString(err.Error())
-			z01.PrintRune('\n')
-			anyError = true
+		if err := f.Close(); err != nil {
+			exitError(err)
 		}
-	}
-
-	if anyError {
-		os.Exit(1)
 	}
 }
