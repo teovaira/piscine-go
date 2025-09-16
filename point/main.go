@@ -31,13 +31,12 @@ func printInt(nbr int) {
 	var digits []rune
 	for nbr > 0 {
 		d := nbr % 10
-		digits = append([]rune{rune(d +'0')}, digits...)
-		nbr/=10
+		digits = append([]rune{rune(d + '0')}, digits...)
+		nbr /= 10
 	}
-	for _,r := range digits {
+	for _, r := range digits {
 		z01.PrintRune(r)
 	}
-
 }
 
 func main() {
@@ -48,6 +47,4 @@ func main() {
 	printInt(points.x)
 	printString(", y = ")
 	printInt(points.y)
-
-	
 }
