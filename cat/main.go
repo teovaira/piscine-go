@@ -25,7 +25,7 @@ func main() {
 		return
 	}
 
-	anySuccess := false
+	anyError := false
 
 	for _, path := range os.Args[1:] {
 		file, err := os.Open(path)
@@ -33,28 +33,26 @@ func main() {
 			printString("ERROR: ")
 			printString(err.Error())
 			z01.PrintRune('\n')
+			anyError = true
 			continue
 		}
 
-		_, copyErr := io.Copy(os.Stdout, file)
-		closeErr := file.Close()
-
-		if copyErr != nil {
+		if _, err := io.Copy(os.Stdout, file); err != nil {
 			printString("ERROR: ")
-			printString(copyErr.Error())
+			printString(err.Error())
 			z01.PrintRune('\n')
-		} else {
-			anySuccess = true
+			anyError = true
 		}
 
-		if closeErr != nil {
+		if err := file.Close(); err != nil {
 			printString("ERROR: ")
-			printString(closeErr.Error())
+			printString(err.Error())
 			z01.PrintRune('\n')
+			anyError = true
 		}
 	}
 
-	if !anySuccess {
+	if anyError {
 		os.Exit(1)
 	}
 }
