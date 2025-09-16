@@ -1,38 +1,50 @@
 package main
 
 import (
-	"fmt"
 	"io"
 	"os"
+
+	"github.com/01-edu/z01"
 )
+
+func printString(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
+	}
+}
 
 func main() {
 	if len(os.Args) == 1 {
 		_, err := io.Copy(os.Stdout, os.Stdin)
 		if err != nil {
-			fmt.Println("ERROR:", err)
+			printString("ERROR: ")
+			printString(err.Error())
+			z01.PrintRune('\n')
 		}
 		return
 	}
 
 	for _, path := range os.Args[1:] {
-		f, err := os.Open(path)
+		file, err := os.Open(path)
 		if err != nil {
-
-			fmt.Println("ERROR:", err)
+			printString("ERROR: ")
+			printString(err.Error())
+			z01.PrintRune('\n')
 			continue
 		}
 
-		_, copyErr := io.Copy(os.Stdout, f)
-
-		closeErr := f.Close()
+		_, copyErr := io.Copy(os.Stdout, file)
+		closeErr := file.Close()
 
 		if copyErr != nil {
-			fmt.Println("ERROR:", copyErr)
+			printString("ERROR: ")
+			printString(copyErr.Error())
+			z01.PrintRune('\n')
 		}
-
 		if closeErr != nil {
-			fmt.Println("ERROR:", closeErr)
+			printString("ERROR: ")
+			printString(closeErr.Error())
+			z01.PrintRune('\n')
 		}
 	}
 }
