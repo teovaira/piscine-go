@@ -47,4 +47,5 @@ func main() {
 	printInt(points.x)
 	printString(", y = ")
 	printInt(points.y)
+	z01.PrintRune('\n')
 }
