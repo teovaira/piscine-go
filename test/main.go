@@ -16,4 +16,3 @@ package main
 // 	fmt.Println(piscine.IsSorted(f, a2)) 
 // 	fmt.Println(piscine.IsSorted(f, a3)) 
 // }
-
