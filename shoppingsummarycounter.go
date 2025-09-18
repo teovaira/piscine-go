@@ -7,7 +7,7 @@ func ShoppingSummaryCounter(str string) map[string]int {
 	inWord := false
 
 	for _, r := range str {
-		if r == ' ' || r == '\t' || r == '\n' || r == '\r' {
+		if r == ' ' {
 			if inWord {
 				counts[current]++
 				current = ""
