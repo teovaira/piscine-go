@@ -1,12 +1,28 @@
 package piscine
 
-import "strings"
-
 func ShoppingSummaryCounter(str string) map[string]int {
-	groceries := strings.Split(str, " ")
-	receiptCounter := make(map[string]int)
-	for _, gr := range groceries {
-		receiptCounter[gr]++
+	words := []string{}
+	current := ""
+
+	for _, r := range str {
+		if r == ' ' {
+			if current != "" {
+				words = append(words, current)
+				current = ""
+			}
+		} else {
+			current += string(r)
+		}
 	}
-	return receiptCounter
+
+	if current != "" {
+		words = append(words, current)
+	}
+
+	counts := make(map[string]int)
+	for _, word := range words {
+		counts[word]++
+	}
+
+	return counts
 }
