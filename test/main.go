@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"piscine"
-)
+// 	"piscine"
+// )
 
-func main() {
-	middle := piscine.Abort(2, 3, 8, 5, 7)
-	fmt.Println(middle)
-}
+// func main() {
+// 	middle := piscine.Abort(2, 3, 8, 5, 7)
+// 	fmt.Println(middle)
+// }
