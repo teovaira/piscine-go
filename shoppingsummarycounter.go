@@ -15,6 +15,7 @@ func ShoppingSummaryCounter(str string) map[string]int {
 			}
 			continue
 		}
+
 		current += string(r)
 		inWord = true
 	}
