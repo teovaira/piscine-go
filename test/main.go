@@ -8,11 +8,12 @@ package main
 
 // func main() {
 // 	link := &piscine.List{}
+// 	link2 := &piscine.List{}
 
-// 	piscine.ListPushFront(link, "Hello")
-// 	piscine.ListPushFront(link, "2")
-// 	piscine.ListPushFront(link, "you")
-// 	piscine.ListPushFront(link, "man")
+// 	piscine.ListPushBack(link, "three")
+// 	piscine.ListPushBack(link, 3)
+// 	piscine.ListPushBack(link, "1")
 
-// 	fmt.Println(piscine.ListSize(link))
+// 	fmt.Println(piscine.ListLast(link))
+// 	fmt.Println(piscine.ListLast(link2))
 // }
