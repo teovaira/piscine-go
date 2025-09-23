@@ -1,28 +1,24 @@
 package main
 
-// import (
-// 	"fmt"
+import (
+	"fmt"
 
-// 	"piscine"
-// )
+	"piscine"
+)
 
-// func main() {
-// 	link := &piscine.List{}
+func main() {
+	link := &piscine.List{}
 
-// 	piscine.ListPushBack(link, 1)
-// 	piscine.ListPushBack(link, 2)
-// 	piscine.ListPushBack(link, 3)
-// 	piscine.ListPushBack(link, 4)
+	piscine.ListPushBack(link, "1")
+	piscine.ListPushBack(link, "2")
+	piscine.ListPushBack(link, "3")
+	piscine.ListPushBack(link, "5")
 
-// 	piscine.ListReverse(link)
+	piscine.ListForEach(link, piscine.Add2_node)
 
-// 	it := link.Head
-
-// 	for it != nil {
-// 		fmt.Println(it.Data)
-// 		it = it.Next
-// 	}
-
-// 	fmt.Println("Tail", link.Tail)
-// 	fmt.Println("Head", link.Head)
-// }
+	it := link.Head
+	for it != nil {
+		fmt.Println(it.Data)
+		it = it.Next
+	}
+}
