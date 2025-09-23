@@ -1,19 +1,36 @@
 package main
 
-// import (
-// 	"fmt"
+import (
+	"fmt"
 
-// 	"piscine"
-// )
+	"piscine"
+)
 
-// func main() {
-// 	link := &piscine.List{}
-// 	link2 := &piscine.List{}
+type (
+	List = piscine.List
+	Node = piscine.NodeL
+)
 
-// 	piscine.ListPushBack(link, "three")
-// 	piscine.ListPushBack(link, 3)
-// 	piscine.ListPushBack(link, "1")
+func PrintList(l *List) {
+	link := l.Head
+	for link != nil {
+		fmt.Print(link.Data, " -> ")
+		link = link.Next
+	}
+	fmt.Println(nil)
+}
 
-// 	fmt.Println(piscine.ListLast(link))
-// 	fmt.Println(piscine.ListLast(link2))
-// }
+func main() {
+	link := &List{}
+
+	piscine.ListPushBack(link, "I")
+	piscine.ListPushBack(link, 1)
+	piscine.ListPushBack(link, "something")
+	piscine.ListPushBack(link, 2)
+
+	fmt.Println("------list------")
+	PrintList(link)
+	piscine.ListClear(link)
+	fmt.Println("------updated list------")
+	PrintList(link)
+}
