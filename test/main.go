@@ -7,22 +7,36 @@ package main
 // )
 
 // func main() {
-// 	link := &piscine.List{}
-
-// 	piscine.ListPushBack(link, 1)
-// 	piscine.ListPushBack(link, 2)
-// 	piscine.ListPushBack(link, 3)
-// 	piscine.ListPushBack(link, 4)
-
-// 	piscine.ListReverse(link)
-
-// 	it := link.Head
-
-// 	for it != nil {
-// 		fmt.Println(it.Data)
-// 		it = it.Next
+// 	root := &piscine.TreeNode{Data: "4"}
+// 	piscine.BTreeInsertData(root, "1")
+// 	piscine.BTreeInsertData(root, "7")
+// 	piscine.BTreeInsertData(root, "5")
+// 	selected := piscine.BTreeSearchItem(root, "7")
+// 	fmt.Print("Item selected -> ")
+// 	if selected != nil {
+// 		fmt.Println(selected.Data)
+// 	} else {
+// 		fmt.Println("nil")
 // 	}
 
-// 	fmt.Println("Tail", link.Tail)
-// 	fmt.Println("Head", link.Head)
+// 	fmt.Print("Parent of selected item -> ")
+// 	if selected.Parent != nil {
+// 		fmt.Println(selected.Parent.Data)
+// 	} else {
+// 		fmt.Println("nil")
+// 	}
+
+// 	fmt.Print("Left child of selected item -> ")
+// 	if selected.Left != nil {
+// 		fmt.Println(selected.Left.Data)
+// 	} else {
+// 		fmt.Println("nil")
+// 	}
+
+// 	fmt.Print("Right child of selected item -> ")
+// 	if selected.Right != nil {
+// 		fmt.Println(selected.Right.Data)
+// 	} else {
+// 		fmt.Println("nil")
+// 	}
 // }
